@@ -70,7 +70,7 @@ export default function Contact() {
           <h2 className="text-4xl font-bold mb-4 tracking-tight">Get In Touch</h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
             Have questions about the Sebastian Grey series? Want to book RyburnDobbs for an event or interview?
-            We'd love to hear from you.
+            We&apos;d love to hear from you.
           </p>
         </div>
         
@@ -226,7 +226,7 @@ export default function Contact() {
                 
                 {submitStatus === "success" && (
                   <div className="p-4 bg-emerald-950/50 border border-emerald-700 rounded-md text-emerald-300">
-                    Your message has been sent! We'll get back to you soon.
+                    Your message has been sent! We&apos;ll get back to you soon.
                   </div>
                 )}
               </form>

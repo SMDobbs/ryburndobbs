@@ -37,7 +37,7 @@ export default function About() {
                 Ryburn Dobbs taught biological anthropology and forensic anthropology at several colleges throughout the San Francisco Bay Area and spent ten years as a forensic anthropologist, working dozens of death investigations. In addition to his anthropological pursuits, Ryburn also worked as an investigative analyst specializing in homicides and unsolved cases.
               </p>
               <p className="leading-relaxed">
-                The Comfort of Distance is Ryburn's first novel and the first in the Sebastian Grey series.
+                The Comfort of Distance is Ryburn&apos;s first novel and the first in the Sebastian Grey series. For more information about Ryburn, his blog, and updates on new books please visit <a href="https://www.ryburndobbs.com" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">www.ryburndobbs.com</a>.
               </p>
               
               <div className="pt-8 border-t border-gray-800">
