@@ -36,24 +36,21 @@ export default function About() {
               <p className="leading-relaxed">
                 Ryburn Dobbs taught biological anthropology and forensic anthropology at several colleges throughout the San Francisco Bay Area and spent ten years as a forensic anthropologist, working dozens of death investigations. In addition to his anthropological pursuits, Ryburn also worked as an investigative analyst specializing in homicides and unsolved cases.
               </p>
-              <p className="leading-relaxed">
-                The Comfort of Distance is Ryburn&apos;s first novel and the first in the Sebastian Grey series. For more information about Ryburn, his blog, and updates on new books please visit <a href="https://www.ryburndobbs.com" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">www.ryburndobbs.com</a>.
-              </p>
-              
+             
               <div className="pt-8 border-t border-gray-800">
-                <h3 className="text-xl font-semibold mb-4 text-emerald-400">The Sebastian Grey Series</h3>
+                <h3 className="text-xl font-semibold mb-4 text-emerald-400">The Sebastien Grey Series</h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex items-start">
                     <span className="mr-2 text-emerald-500">›</span>
-                    The Comfort of Distance (2021)
+                    The Comfort of Distance (2020)
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-emerald-500">›</span>
-                    The Boxwood Torso (2022)
+                    The Boxwood Torso (2021)
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2 text-emerald-500">›</span>
-                    Where the Blood is Made (2023)
+                    Where the Blood is Made (2022)
                   </li>
                 </ul>
               </div>

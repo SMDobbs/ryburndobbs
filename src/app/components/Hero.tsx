@@ -33,7 +33,7 @@ export default function Hero() {
         <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
           Unraveling the darkness that lingers between the trees.
           <span className="block mt-2 text-lg opacity-80">
-            Author of the Sebastian Grey detective series
+            Author of the Sebastien Grey detective series
           </span>
         </p>
         

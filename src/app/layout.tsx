@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RyburnDobbs | Detective Novelist",
+  title: "RyburnDobbs | Anthropologist Novelist",
   description: "Official website of RyburnDobbs, author of thrilling detective novels set in the wilderness",
 };
 

@@ -12,7 +12,7 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    text: "Sebastian Grey is a great character that provides the right amount of interesting information and mystery to ensure a good mystery. I enjoyed the book and look forward to reading another one. Highly recommended.",
+    text: "Sebastien Grey is a great character that provides the right amount of interesting information and mystery to ensure a good mystery. I enjoyed the book and look forward to reading another one. Highly recommended.",
     author: "Gary Bradford"
   },
   {
@@ -22,12 +22,12 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    text: "This was a thoroughly enjoyable book. Sebastian and Tiffany are wonderful characters. I started reading during the morning and hated to put it down when lunchtime came. I especially liked that this is a clean book free from profanity and explicit sexual activity. I strongly recommend this book to everyone.",
+    text: "This was a thoroughly enjoyable book. Sebastien and Tiffany are wonderful characters. I started reading during the morning and hated to put it down when lunchtime came. I especially liked that this is a clean book free from profanity and explicit sexual activity. I strongly recommend this book to everyone.",
     author: "LSM"
   },
   {
     id: 4,
-    text: "The Comfort Of Distance by former forensic scientist Ryburn Dobbs is a mash up of Bones, Monk and Longmire. When body parts start showing up in the forests of Black Hills the sheriff calls in his quirky brilliant forensic anthropologist brother Sebastian to help figure out if the sinister findings are the result of human, animal or worse interventions.\n\nNarrator Conner Goff lends the perfect cadence to this extremely precise thriller that provides intellectual, romantic and psychology elements for a very satisfying start to The Sebastian Grey book series.",
+    text: "The Comfort Of Distance by former forensic scientist Ryburn Dobbs is a mash up of Bones, Monk and Longmire. When body parts start showing up in the forests of Black Hills the sheriff calls in his quirky brilliant forensic anthropologist brother Sebastien to help figure out if the sinister findings are the result of human, animal or worse interventions.\n\nNarrator Conner Goff lends the perfect cadence to this extremely precise thriller that provides intellectual, romantic and psychology elements for a very satisfying start to The Sebastien Grey book series.",
     author: "Linda McCutcheo",
     note: "On the audiobook narration"
   }

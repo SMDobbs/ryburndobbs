@@ -2,36 +2,13 @@ export default function Events() {
   const events = [
     {
       id: 1,
-      title: "Book Signing: 'The Comfort of Distance'",
-      date: "June 18, 2024",
-      time: "6:30 PM - 8:30 PM",
-      location: "Powell's Books, Portland, OR",
-      description: "Join RyburnDobbs for a reading and signing of his acclaimed Sebastian Grey detective novel."
+      title: "Men of Mystery 25th Anniversary",
+      date: "November 28, 2025",
+      time: "8:00 AM - 2:30 PM",
+      location: "The Grand, Long Beach, CA",
+      description: "Join Ryburn Dobbs for a reading and signing of his acclaimed Sebastien Grey detective novel."
     },
-    {
-      id: 2,
-      title: "Murder in the Woods: Crime Fiction Panel",
-      date: "July 12, 2024",
-      time: "7:00 PM - 9:00 PM",
-      location: "Seattle Mystery Bookshop, Seattle, WA",
-      description: "Panel discussion with fellow crime authors on crafting compelling mysteries in natural settings."
-    },
-    {
-      id: 3,
-      title: "Crime Writing Workshop: Setting as Character",
-      date: "August 23, 2024",
-      time: "1:00 PM - 5:00 PM",
-      location: "Pacific Northwest Writers Association, Gresham, OR",
-      description: "A hands-on workshop exploring how to incorporate wilderness landscapes as a vital element in your fiction."
-    },
-    {
-      id: 4,
-      title: "Thrillerfest Appearance",
-      date: "September 18-21, 2024",
-      time: "Various Times",
-      location: "Grand Hyatt, San Francisco, CA",
-      description: "Multiple appearances including readings, signings, and a special discussion on 'The Psychology of Isolation in Crime Fiction'."
-    }
+    
   ];
 
   return (

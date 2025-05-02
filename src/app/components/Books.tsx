@@ -20,32 +20,32 @@ const books: Book[] = [
   {
     id: 1,
     title: "The Comfort of Distance",
-    series: "A Sebastian Grey Novel",
+    series: "A Sebastien Grey Novel",
     cover: "/images/book1.jpg",
-    description: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Sgt. Hank LeGris needs to find who the dead are, and how they got that way. He pulls in the only person who can solve these strange cases – his estranged brother, forensic anthropologist Dr. Sebastian Grey. Through forensic thinking and deductive reasoning, Sebastian not only solves the mystery of the remains, but also a local murder, while he himself is transformed by his own success and by Detective Tiffany Reese.",
-    fullDescription: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Rumors of a rogue man-eating mountain lion are spreading through the county and panic is starting to swell. Sgt. Hank LeGris of the Custer County Sheriff's Office is feeling the pressure; he needs to find out who the dead are, and how they got that way. Hank suspects that the bodies are the result of a more sinister predator. But in order to solve the mystery, he will have reach back into his own dysfunctional family history and pull in the only person who can get to the bottom of these strange cases – his estranged and disordered brother, the brilliant forensic anthropologist Dr. Sebastian Grey. When Sebastian arrives in the Black Hills, he takes his brother, and detective Tiffany Reese, on a whirlwind tour of forensic thinking and deductive reasoning, not only solving the mystery of the human remains, but the murder of a local thug as well. In the process, Sebastian himself is forever transformed by his own success and by the charm and kindness of the lovely Detective Reese: &apos;One day I hope you give yourself permission to be different, Sebastian. You&apos;ll be happier.&apos; The Comfort of Distance is equal parts forensic mystery, police procedure and character study, with dashes of comedy and romance thrown in. Readers will be cheering at the end and ready for more.",
+    description: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Sgt. Hank LeGris needs to find who the dead are, and how they got that way. He pulls in the only person who can solve these strange cases – his estranged brother, forensic anthropologist Dr. Sebastien Grey. Through forensic thinking and deductive reasoning, Sebastien not only solves the mystery of the remains, but also a local murder, while he himself is transformed by his own success and by Detective Tiffany Reese.",
+    fullDescription: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Rumors of a rogue man-eating mountain lion are spreading through the county and panic is starting to swell. Sgt. Hank LeGris of the Custer County Sheriff's Office is feeling the pressure; he needs to find out who the dead are, and how they got that way. Hank suspects that the bodies are the result of a more sinister predator. But in order to solve the mystery, he will have reach back into his own dysfunctional family history and pull in the only person who can get to the bottom of these strange cases – his estranged and disordered brother, the brilliant forensic anthropologist Dr. Sebastien Grey. When Sebastien arrives in the Black Hills, he takes his brother, and detective Tiffany Reese, on a whirlwind tour of forensic thinking and deductive reasoning, not only solving the mystery of the human remains, but the murder of a local thug as well. In the process, Sebastien himself is forever transformed by his own success and by the charm and kindness of the lovely Detective Reese: &apos;One day I hope you give yourself permission to be different, Sebastien. You&apos;ll be happier.&apos; The Comfort of Distance is equal parts forensic mystery, police procedure and character study, with dashes of comedy and romance thrown in. Readers will be cheering at the end and ready for more.",
     price: 17.99,
-    year: 2021,
+    year: 2020,
   },
   {
     id: 2,
     title: "The Boxwood Torso",
-    series: "A Sebastian Grey Novel",
+    series: "A Sebastien Grey Novel",
     cover: "/images/book2.jpg",
-    description: "A skull in one place, a torso in another. Thirty years ago, authorities didn't think they were connected. But Dr. Sebastian Grey believes they belong to the same victim – an unidentified man who was shot, dismembered, and scattered in two states. Working with Detective Tiffany Reese amid professional rivalries and local secrets, the cold case proves more challenging than expected.",
-    fullDescription: "A skull in one place, a torso in another. Are they connected? Thirty years ago, the authorities didn't think so. But the ingenious forensic anthropologist Dr. Sebastian Grey is now on the case, and he believes they both belong to the same victim - an unidentified man who was shot, dismembered, scattered in two states and burned. But time is not the only thing standing in the way of the truth. A pair of professional rivals, a spy inside the sheriff's office and a local family with a dark secret are all obstacles to untying this murderous knot. This second book in the Sebastian Grey series finds Dr. Grey once again in the Black Hills of South Dakota and teamed up with Tiffany Reese - a shrewd and tough detective who doubles as the love of his life and the only woman who can coax him out of his awkward social isolation. Will their relationship survive the pressure of high stakes cold case work?",
+    description: "A skull in one place, a torso in another. Thirty years ago, authorities didn't think they were connected. But Dr. Sebastien Grey believes they belong to the same victim – an unidentified man who was shot, dismembered, and scattered in two states. Working with Detective Tiffany Reese amid professional rivalries and local secrets, the cold case proves more challenging than expected.",
+    fullDescription: "A skull in one place, a torso in another. Are they connected? Thirty years ago, the authorities didn't think so. But the ingenious forensic anthropologist Dr. Sebastien Grey is now on the case, and he believes they both belong to the same victim - an unidentified man who was shot, dismembered, scattered in two states and burned. But time is not the only thing standing in the way of the truth. A pair of professional rivals, a spy inside the sheriff's office and a local family with a dark secret are all obstacles to untying this murderous knot. This second book in the Sebastien Grey series finds Dr. Grey once again in the Black Hills of South Dakota and teamed up with Tiffany Reese - a shrewd and tough detective who doubles as the love of his life and the only woman who can coax him out of his awkward social isolation. Will their relationship survive the pressure of high stakes cold case work?",
     price: 18.99,
-    year: 2022,
+    year: 2021,
   },
   {
     id: 3,
     title: "Where the Blood is Made",
-    series: "A Sebastian Grey Novel",
+    series: "A Sebastien Grey Novel",
     cover: "/images/book3.jpg",
-    description: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastian Grey is certain they are. But he must convince the Custer County Sheriff that a long-forgotten missing persons case is actually a homicide. With Detective Tiffany Reese, they uncover a dark conspiracy perpetrated by the most unlikely suspects.",
-    fullDescription: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastian Grey is certain that they are. But unless he can convince the Custer County Sheriff that a long-forgotten missing persons case is a homicide, the truth may stay hidden forever. Sebastian and Detective Tiffany Reese team up once again to solve one of the county's most baffling mysteries. Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.",
+    description: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain they are. But he must convince the Custer County Sheriff that a long-forgotten missing persons case is actually a homicide. With Detective Tiffany Reese, they uncover a dark conspiracy perpetrated by the most unlikely suspects.",
+    fullDescription: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain that they are. But unless he can convince the Custer County Sheriff that a long-forgotten missing persons case is a homicide, the truth may stay hidden forever. Sebastien and Detective Tiffany Reese team up once again to solve one of the county's most baffling mysteries. Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.",
     price: 19.99,
-    year: 2023,
+    year: 2022,
   },
 ];
 
@@ -81,9 +81,9 @@ export default function Books() {
     <section id="books" className="py-20 bg-gradient-to-b from-black to-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-4 tracking-tight">The Sebastian Grey Novels</h2>
+          <h2 className="text-4xl font-bold mb-4 tracking-tight">The Sebastien Grey Novels</h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-            Follow Detective Sebastian Grey as he unravels mysteries hidden within the wilderness, 
+            Follow forensic anthropologist Sebastien Grey as he unravels mysteries hidden within the wilderness, 
             where the forest keeps secrets darker than anyone could imagine.
           </p>
         </div>
@@ -96,8 +96,8 @@ export default function Books() {
               <div className="lg:w-1/3">
                 <div className="relative aspect-[2/3] w-full max-w-xs mx-auto shadow-2xl">
                   <Image
-                    src="/images/book1.jpg"
-                    alt="The Comfort of Distance"
+                    src="/images/book3.jpg"
+                    alt="Where the Blood is Made"
                     className="object-cover rounded-lg"
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
@@ -106,18 +106,16 @@ export default function Books() {
                 </div>
               </div>
               <div className="lg:w-2/3">
-                <p className="text-emerald-400 text-sm font-medium mb-2 uppercase tracking-widest">A Sebastian Grey Novel</p>
-                <h3 className="text-3xl font-bold mb-4 tracking-tight">The Comfort of Distance</h3>
+                <p className="text-emerald-400 text-sm font-medium mb-2 uppercase tracking-widest">A Sebastien Grey Novel</p>
+                <h3 className="text-3xl font-bold mb-4 tracking-tight">Where the Blood is Made</h3>
                 <div className="prose prose-invert max-w-none mb-6">
                   <p className="text-gray-300">
-                    Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Rumors of a rogue man-eating mountain lion are spreading through the county and panic is starting to swell.
+                    How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain that they are. But unless he can convince the Custer County Sheriff that a long-forgotten missing persons case is a homicide, the truth may stay hidden forever.
                   </p>
                   <p className="text-gray-300 mt-4">
-                    Sgt. Hank LeGris must reach into his own dysfunctional family history and pull in the only person who can solve these strange cases – his estranged brother, the brilliant forensic anthropologist Dr. Sebastian Grey.
+                    Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.
                   </p>
-                  <p className="text-gray-300 mt-4">
-                    Equal parts forensic mystery, police procedure and character study, with dashes of comedy and romance thrown in.
-                  </p>
+                  
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 mt-6">
                   <button className="px-6 py-3 bg-emerald-700 text-white rounded shadow-xl hover:bg-emerald-600 transition-colors">
@@ -126,9 +124,7 @@ export default function Books() {
                   <button className="px-6 py-3 bg-transparent border border-emerald-700 text-emerald-400 rounded hover:bg-emerald-900/20 transition-colors">
                     Get eBook
                   </button>
-                  <button className="px-6 py-3 bg-transparent border border-gray-700 text-gray-300 rounded hover:bg-gray-800 transition-colors">
-                    Read Sample
-                  </button>
+                  
                 </div>
               </div>
             </div>
@@ -160,14 +156,14 @@ export default function Books() {
             </div>
             <div className="md:w-1/2 flex flex-col justify-center">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-2xl font-bold tracking-tight">The Complete Sebastian Grey Series</h3>
+                <h3 className="text-2xl font-bold tracking-tight">The Complete Sebastien Grey Series</h3>
                 <div className="flex items-center justify-center bg-emerald-700 h-14 w-14 rounded-full shadow-xl">
                   <p className="text-white font-bold text-sm">20%<br/>OFF</p>
                 </div>
               </div>
               <p className="text-emerald-400 text-sm uppercase tracking-wider mb-4">All three novels in one collection</p>
               <p className="text-gray-300 mb-6">
-                Experience the entire Sebastian Grey series in one collection. Follow the detective's journey through the darkest corners of the wilderness as he hunts killers and confronts his own past.
+                Experience the entire Sebastien Grey series in one collection. Follow the forensic anthropologist's journey through the darkest corners of the wilderness as he hunts killers and confronts his own past.
               </p>
               <div className="mb-6">
                 <div className="flex justify-between text-lg mb-2">
