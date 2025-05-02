@@ -9,7 +9,7 @@ type FormData = {
   message: string;
 };
 
-type SubmitStatus = "success" | null;
+type SubmitStatus = "success" | "error" | null;
 
 export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
@@ -21,6 +21,7 @@ export default function Contact() {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>(null);
+  const [errorMessage, setErrorMessage] = useState("");
   
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -30,28 +31,56 @@ export default function Contact() {
     }));
   };
   
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      
-      // Reset form after success
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'ca984b9b-305e-41df-a2d3-8c23b7fa37a4',
+          from_name: 'RyburnDobbs Website Contact',
+          website: 'ryburnddobbs.com',
+          ...formData
+        }),
       });
       
-      // Clear success message after 5 seconds
+      const data = await response.json();
+      
+      if (data.success) {
+        setSubmitStatus("success");
+        // Reset form after success
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
+        });
+        
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus(null);
+        }, 5000);
+      } else {
+        throw new Error(data.message || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus("error");
+      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+      
+      // Clear error message after 5 seconds
       setTimeout(() => {
         setSubmitStatus(null);
+        setErrorMessage("");
       }, 5000);
-    }, 1500);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   
   return (
@@ -143,6 +172,12 @@ export default function Contact() {
             <div className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 shadow-xl">
               <h3 className="text-2xl font-bold mb-8 tracking-tight">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
+                <input 
+                  type="hidden" 
+                  name="botcheck"
+                  style={{ display: "none" }}
+                />
+                
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     Your Name <span className="text-emerald-500">*</span>
@@ -220,6 +255,12 @@ export default function Contact() {
                 {submitStatus === "success" && (
                   <div className="p-4 bg-emerald-950/50 border border-emerald-700 rounded-md text-emerald-300">
                     Your message has been sent! We&apos;ll get back to you soon.
+                  </div>
+                )}
+                
+                {submitStatus === "error" && (
+                  <div className="p-4 bg-red-950/50 border border-red-700 rounded-md text-red-300">
+                    Failed to send message. {errorMessage || "Please try again later."}
                   </div>
                 )}
               </form>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define book type
 type Book = {
@@ -13,6 +14,8 @@ type Book = {
   fullDescription: string;
   price: number;
   year: number;
+  amazonLink: string;
+  booksByLink: string;
 };
 
 // Book data
@@ -24,8 +27,10 @@ const books: Book[] = [
     cover: "/images/book1.jpg",
     description: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Sgt. Hank LeGris needs to find who the dead are, and how they got that way. He pulls in the only person who can solve these strange cases – his estranged brother, forensic anthropologist Dr. Sebastien Grey. Through forensic thinking and deductive reasoning, Sebastien not only solves the mystery of the remains, but also a local murder, while he himself is transformed by his own success and by Detective Tiffany Reese.",
     fullDescription: "Deep in the forests of the Black Hills, human remains are being discovered – one bit at a time. Rumors of a rogue man-eating mountain lion are spreading through the county and panic is starting to swell. Sgt. Hank LeGris of the Custer County Sheriff's Office is feeling the pressure; he needs to find out who the dead are, and how they got that way. Hank suspects that the bodies are the result of a more sinister predator. But in order to solve the mystery, he will have reach back into his own dysfunctional family history and pull in the only person who can get to the bottom of these strange cases – his estranged and disordered brother, the brilliant forensic anthropologist Dr. Sebastien Grey. When Sebastien arrives in the Black Hills, he takes his brother, and detective Tiffany Reese, on a whirlwind tour of forensic thinking and deductive reasoning, not only solving the mystery of the human remains, but the murder of a local thug as well. In the process, Sebastien himself is forever transformed by his own success and by the charm and kindness of the lovely Detective Reese: &apos;One day I hope you give yourself permission to be different, Sebastien. You&apos;ll be happier.&apos; The Comfort of Distance is equal parts forensic mystery, police procedure and character study, with dashes of comedy and romance thrown in. Readers will be cheering at the end and ready for more.",
-    price: 17.99,
+    price: 14.99,
     year: 2020,
+    amazonLink: "https://www.amazon.com/Comfort-Distance-Sebastien-Grey-Novels/dp/B09PVN3MRM/ref=sr_1_1?crid=22HIELYPM7ZPH&dib=eyJ2IjoiMSJ9.AV_XSJkbScDDI2RwkRLKRLDjKaJWcXyAP7GVNC1eEwBEkvVMr7o3AfkWDM-t0HlcpxFU-7MtbRB5Uh1NlsG9doEEsu2kkfopYBZCWimpXcmo1757PvhKInB2XcUt2bsFPCxbgt5grcXedMSpPgJCcAPXrXq6_OCexr715N8vAJeUpUTJwv2RF2VM2N3NNhMw1fSX5T57rh9BDiy_iwfPi4-j0oPqk4p44wBieRLnoL4.czWse8syibKHOUCCcwYEfrgIZMUPbbw-mQXj0RGQNXA&dib_tag=se&keywords=The+comfort+of+distance&qid=1746210113&sprefix=the+comfort+of+distanc%2Caps%2C126&sr=8-1",
+    booksByLink: "https://books.by/dandiprat-press#the-comfort-of-distance",
   },
   {
     id: 2,
@@ -34,8 +39,10 @@ const books: Book[] = [
     cover: "/images/book2.jpg",
     description: "A skull in one place, a torso in another. Thirty years ago, authorities didn't think they were connected. But Dr. Sebastien Grey believes they belong to the same victim – an unidentified man who was shot, dismembered, and scattered in two states. Working with Detective Tiffany Reese amid professional rivalries and local secrets, the cold case proves more challenging than expected.",
     fullDescription: "A skull in one place, a torso in another. Are they connected? Thirty years ago, the authorities didn't think so. But the ingenious forensic anthropologist Dr. Sebastien Grey is now on the case, and he believes they both belong to the same victim - an unidentified man who was shot, dismembered, scattered in two states and burned. But time is not the only thing standing in the way of the truth. A pair of professional rivals, a spy inside the sheriff's office and a local family with a dark secret are all obstacles to untying this murderous knot. This second book in the Sebastien Grey series finds Dr. Grey once again in the Black Hills of South Dakota and teamed up with Tiffany Reese - a shrewd and tough detective who doubles as the love of his life and the only woman who can coax him out of his awkward social isolation. Will their relationship survive the pressure of high stakes cold case work?",
-    price: 18.99,
+    price: 13.99,
     year: 2021,
+    amazonLink: "https://www.amazon.com/Boxwood-Torso-Sebastien-Grey-Novels/dp/B09VC58LNC/ref=sr_1_1?crid=1HVO6ECE49HTH&dib=eyJ2IjoiMSJ9.tAJRw_zAg1LGD-N-srDETw.reFmSOf3qPYukcMTGtIRfEYeE9lVL3tHzQZ0Z3io968&dib_tag=se&keywords=The+boxwood+torso&qid=1746210179&s=audible&sprefix=the+boxwood+torso%2Caudible%2C100&sr=1-1",
+    booksByLink: "https://books.by/dandiprat-press#the-boxwood-torso",
   },
   {
     id: 3,
@@ -44,8 +51,10 @@ const books: Book[] = [
     cover: "/images/book3.jpg",
     description: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain they are. But he must convince the Custer County Sheriff that a long-forgotten missing persons case is actually a homicide. With Detective Tiffany Reese, they uncover a dark conspiracy perpetrated by the most unlikely suspects.",
     fullDescription: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain that they are. But unless he can convince the Custer County Sheriff that a long-forgotten missing persons case is a homicide, the truth may stay hidden forever. Sebastien and Detective Tiffany Reese team up once again to solve one of the county's most baffling mysteries. Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.",
-    price: 19.99,
+    price: 12.99,
     year: 2022,
+    amazonLink: "https://www.amazon.com/Where-Blood-Made-Sebastien-Novel/dp/B0C2H5XDKW/ref=sr_1_1?crid=2759TIKTNMDK9&dib=eyJ2IjoiMSJ9.bUgDLTTA4DW_mSOQl4Fyog.NA1QTMhd8lBL95V7mEm30wao7b2PD6GkPxwSpJq2Wgo&dib_tag=se&keywords=where+the+blood+is+made&qid=1746210222&s=audible&sprefix=where+the+blood+is+mad%2Caudible%2C102&sr=1-1",
+    booksByLink: "https://books.by/dandiprat-press#where-the-blood-is-made",
   },
 ];
 
@@ -115,17 +124,24 @@ export default function Books() {
                   <p className="text-gray-300 mt-4">
                     Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.
                   </p>
-                  
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                  <button className="px-6 py-3 bg-emerald-700 text-white rounded shadow-xl hover:bg-emerald-600 transition-colors">
-                    Order Hardcover
-                  </button>
-                  <button className="px-6 py-3 bg-transparent border border-emerald-700 text-emerald-400 rounded hover:bg-emerald-900/20 transition-colors">
-                    Get eBook
-                  </button>
-                  
+                  <Link 
+                    href="https://books.by/dandiprat-press#where-the-blood-is-made" 
+                    target="_blank" 
+                    className="px-6 py-3 bg-emerald-700 text-white rounded shadow-xl hover:bg-emerald-600 transition-colors text-center"
+                  >
+                    Purchase on Books.by
+                  </Link>
+                  <Link 
+                    href="https://www.amazon.com/Where-Blood-Made-Sebastien-Novel/dp/B0C2H5XDKW/ref=sr_1_1?crid=2759TIKTNMDK9&dib=eyJ2IjoiMSJ9.bUgDLTTA4DW_mSOQl4Fyog.NA1QTMhd8lBL95V7mEm30wao7b2PD6GkPxwSpJq2Wgo&dib_tag=se&keywords=where+the+blood+is+made&qid=1746210222&s=audible&sprefix=where+the+blood+is+mad%2Caudible%2C102&sr=1-1" 
+                    target="_blank" 
+                    className="px-6 py-3 bg-transparent border border-emerald-700 text-emerald-400 rounded hover:bg-emerald-900/20 transition-colors text-center"
+                  >
+                    Buy on Amazon
+                  </Link>
                 </div>
+                <p className="text-gray-400 text-sm mt-3 italic">Purchasing on Books.by provides more support directly to the author</p>
               </div>
             </div>
           </div>
@@ -175,9 +191,13 @@ export default function Books() {
                   <span className="text-emerald-400">$45.99</span>
                 </div>
               </div>
-              <button className="w-full bg-emerald-700 text-white font-medium py-3 rounded shadow-xl hover:bg-emerald-600 transition-colors">
-                Order Complete Collection
-              </button>
+              <Link 
+                href="https://www.amazon.com/Sebastien-Grey-Books-1-3-Novels-ebook/dp/B0B7F21DT6/ref=sr_1_4?dib=eyJ2IjoiMSJ9.hDMC4HOLFBXqWHJ0ILBqUpip3I7a3FZQiFTcJ6MSQ1sGV9BSIRRO247-lSEcC5S0.TnKhWmEEdDm_5GOenJZIDLhjFjvR7edqUoijPgmd0yo&dib_tag=se&keywords=Ryburn+Dobbs&qid=1746210254&s=audible&sr=1-4-catcorr" 
+                target="_blank" 
+                className="w-full bg-emerald-700 text-white font-medium py-3 rounded shadow-xl hover:bg-emerald-600 transition-colors text-center"
+              >
+                Order Complete Collection on Amazon
+              </Link>
             </div>
           </div>
         </div>
@@ -220,13 +240,24 @@ export default function Books() {
                       <p className="text-gray-400 mb-2">Published: {selectedBook.year}</p>
                       <p className="text-2xl font-bold text-emerald-400">${selectedBook.price}</p>
                     </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <button className="bg-emerald-700 text-white font-medium py-3 rounded shadow-lg hover:bg-emerald-600 transition-colors">
-                        Order Hardcover
-                      </button>
-                      <button className="bg-transparent border border-emerald-700 text-emerald-400 font-medium py-3 rounded hover:bg-emerald-900/20 transition-colors">
-                        Get eBook
-                      </button>
+                    <div className="flex flex-col space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <Link 
+                          href={selectedBook.booksByLink} 
+                          target="_blank" 
+                          className="bg-emerald-700 text-white font-medium py-3 rounded shadow-lg hover:bg-emerald-600 transition-colors text-center"
+                        >
+                          Order on Books.by
+                        </Link>
+                        <Link 
+                          href={selectedBook.amazonLink} 
+                          target="_blank" 
+                          className="bg-transparent border border-emerald-700 text-emerald-400 font-medium py-3 rounded hover:bg-emerald-900/20 transition-colors text-center"
+                        >
+                          Buy on Amazon
+                        </Link>
+                      </div>
+                      <p className="text-gray-400 text-sm italic">Purchasing on Books.by provides more support directly to the author</p>
                     </div>
                   </div>
                 </div>

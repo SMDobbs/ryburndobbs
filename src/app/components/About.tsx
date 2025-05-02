@@ -59,9 +59,7 @@ export default function About() {
                 <a href="#contact" className="inline-block px-6 py-3 bg-emerald-700 text-white rounded shadow-lg hover:bg-emerald-600 transition-colors">
                   Contact for Events
                 </a>
-                <a href="https://www.ryburndobbs.com" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-transparent border border-emerald-500 text-emerald-400 rounded hover:bg-emerald-900/20 transition-colors">
-                  Visit Website
-                </a>
+                
               </div>
             </div>
           </div>

@@ -1,7 +1,62 @@
+"use client";
+
 import Link from "next/link";
+import { useState, FormEvent, ChangeEvent } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"success" | "error" | null>(null);
+  
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+  
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'ca984b9b-305e-41df-a2d3-8c23b7fa37a4',
+          from_name: 'RyburnDobbs Newsletter Subscription',
+          website: 'ryburnddobbs.com',
+          subject: 'New Newsletter Subscription',
+          email: email,
+        }),
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setSubmitStatus("success");
+        setEmail("");
+        
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus(null);
+        }, 5000);
+      } else {
+        throw new Error(data.message || 'Failed to submit');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus("error");
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   
   return (
     <footer className="bg-gradient-to-t from-black to-gray-900 text-white pt-20 pb-10 relative overflow-hidden">
@@ -76,22 +131,40 @@ export default function Footer() {
             <p className="text-gray-400 mb-5">
               Sign up to receive updates on new releases, events, exclusive content, and more.
             </p>
-            <form className="space-y-2">
+            <form className="space-y-2" onSubmit={handleSubmit}>
+              <input 
+                type="hidden" 
+                name="botcheck"
+                style={{ display: "none" }}
+              />
               <div className="relative">
                 <input
                   type="email"
                   placeholder="your@email.com"
                   className="w-full px-4 py-3 bg-gray-900/60 border border-gray-800 rounded focus:outline-none focus:ring-1 focus:ring-emerald-500 focus:border-emerald-500 text-white placeholder-gray-500"
                   required
+                  value={email}
+                  onChange={handleChange}
                 />
               </div>
               <button
                 type="submit"
                 className="w-full bg-emerald-700 hover:bg-emerald-600 text-white font-medium py-3 px-4 rounded shadow-lg transition-colors"
+                disabled={isSubmitting}
               >
-                Subscribe
+                {isSubmitting ? 'Submitting...' : 'Subscribe'}
               </button>
             </form>
+            {submitStatus === "success" && (
+              <p className="text-emerald-500 text-sm mt-2">
+                Subscription successful!
+              </p>
+            )}
+            {submitStatus === "error" && (
+              <p className="text-red-500 text-sm mt-2">
+                Subscription error. Please try again later.
+              </p>
+            )}
           </div>
         </div>
         
