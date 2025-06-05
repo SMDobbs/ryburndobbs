@@ -117,7 +117,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold mb-2 text-emerald-300">Email</h4>
-                    <p className="text-gray-300 mb-1">contact@ryburnddobbs.com</p>
+                    <p className="text-gray-300 mb-1">ryburn@ryburnddobbs.com</p>
                     <p className="text-gray-500 text-sm">For media inquiries: press@ryburnddobbs.com</p>
                   </div>
                 </div>
