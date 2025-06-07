@@ -51,7 +51,7 @@ const books: Book[] = [
     cover: "/images/book3.jpg",
     description: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain they are. But he must convince the Custer County Sheriff that a long-forgotten missing persons case is actually a homicide. With Detective Tiffany Reese, they uncover a dark conspiracy perpetrated by the most unlikely suspects.",
     fullDescription: "How can a living woman's bones be inside a box in the morgue? Forensic anthropologist Dr. Sebastien Grey is certain that they are. But unless he can convince the Custer County Sheriff that a long-forgotten missing persons case is a homicide, the truth may stay hidden forever. Sebastien and Detective Tiffany Reese team up once again to solve one of the county's most baffling mysteries. Amber Harrison disappeared ten years ago, and most people believe she left town with a new boyfriend. But others feel that the investigation was botched from the beginning. The evidence will uncover a dark conspiracy perpetrated by the most unlikely suspects.",
-    price: 12.99,
+    price: 13.99,
     year: 2022,
     amazonLink: "https://www.amazon.com/Where-Blood-Made-Sebastien-Novel/dp/B0C2H5XDKW/ref=sr_1_1?crid=2759TIKTNMDK9&dib=eyJ2IjoiMSJ9.bUgDLTTA4DW_mSOQl4Fyog.NA1QTMhd8lBL95V7mEm30wao7b2PD6GkPxwSpJq2Wgo&dib_tag=se&keywords=where+the+blood+is+made&qid=1746210222&s=audible&sprefix=where+the+blood+is+mad%2Caudible%2C102&sr=1-1",
     booksByLink: "https://books.by/dandiprat-press#where-the-blood-is-made",
@@ -174,21 +174,22 @@ export default function Books() {
               <div className="flex items-center justify-between mb-2">
                 <h3 className="text-2xl font-bold tracking-tight">The Complete Sebastien Grey Series</h3>
                 <div className="flex items-center justify-center bg-emerald-700 h-14 w-14 rounded-full shadow-xl">
-                  <p className="text-white font-bold text-sm">20%<br/>OFF</p>
+                  <p className="text-white font-bold text-sm">43%<br/>OFF</p>
                 </div>
               </div>
-              <p className="text-emerald-400 text-sm uppercase tracking-wider mb-4">All three novels in one collection</p>
+              <p className="text-emerald-400 text-sm uppercase tracking-wider mb-2">Ebook Collection - All three novels</p>
+              <p className="text-yellow-400 text-sm font-semibold mb-4">📚 EBOOKS ONLY - Digital Download</p>
               <p className="text-gray-300 mb-6">
-                Experience the entire Sebastien Grey series in one collection. Follow the forensic anthropologist's journey through the darkest corners of the wilderness as he hunts killers and confronts his own past.
+                Experience the entire Sebastien Grey ebook series in one digital collection. Follow the forensic anthropologist's journey through the darkest corners of the wilderness as he hunts killers and confronts his own past. <span className="text-emerald-400 font-medium">Available as instant digital download.</span>
               </p>
               <div className="mb-6">
                 <div className="flex justify-between text-lg mb-2">
-                  <span>Individual Price:</span>
-                  <span className="line-through text-gray-500">$56.97</span>
+                  <span>Individual Ebook Price:</span>
+                  <span className="line-through text-gray-500">$13.97</span>
                 </div>
                 <div className="flex justify-between text-2xl font-bold">
-                  <span>Collection Price:</span>
-                  <span className="text-emerald-400">$45.99</span>
+                  <span>Ebook Collection Price:</span>
+                  <span className="text-emerald-400">$7.99</span>
                 </div>
               </div>
               <Link 
@@ -196,7 +197,7 @@ export default function Books() {
                 target="_blank" 
                 className="w-full bg-emerald-700 text-white font-medium py-3 rounded shadow-xl hover:bg-emerald-600 transition-colors text-center"
               >
-                Order Complete Collection on Amazon
+                Order Ebook Collection on Amazon
               </Link>
             </div>
           </div>
